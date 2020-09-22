@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const TextField = ({ htmlFor, label, id, name, type, innerRef }) => {
+export const TextField = ({ label, id, name, type, innerRef }) => {
   return (
     <div>
-      <label htmlFor={htmlFor}>{label}</label>
+      <label htmlFor={id}>{label}</label>
       <input name={name} id={id} type={type} ref={innerRef} />
     </div>
   );

@@ -31,5 +31,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^7.24.2",
+    "mutationobserver-shim": "^0.3.7"
   }
 }
