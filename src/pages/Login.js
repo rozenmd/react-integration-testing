@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 
-import { Form } from '../components/Form/Form';
-import { Button } from '../components/Button/Button';
-import { TextField } from '../components/TextField/TextField';
+import { Button } from "../components/Button/Button";
+import { TextField } from "../components/TextField/TextField";
+import { Form } from "../components/Form/Form";
 
 function Login() {
   const { register, handleSubmit } = useForm();
   const [formData, setFormData] = useState(null);
 
-  const submitHandler = (data) => {
+  const onSubmit = (data) => {
     setFormData(data);
   };
 
@@ -22,20 +22,18 @@ function Login() {
         <div>Your password: {formData.password}</div>
       ) : null}
 
-      <Form onSubmit={handleSubmit(submitHandler)}>
+      <Form onSubmit={handleSubmit(onSubmit)}>
         <TextField
-          name="username"
-          id="username"
           label="Username"
+          id="username"
           type="text"
-          innerRef={register({ required: true })}
+          register={register("username", { required: true })}
         />
         <TextField
-          name="password"
-          id="password"
           label="Password"
+          id="password"
           type="password"
-          innerRef={register({ required: true })}
+          register={register("password", { required: true })}
         />
         <Button type="submit">Submit</Button>
       </Form>

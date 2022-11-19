@@ -1,12 +1,8 @@
-import React from 'react';
-
-export const TextField = ({ label, id, name, type, innerRef }) => {
+export const TextField = ({ label, id, register, ...props }) => {
   return (
     <div>
       <label htmlFor={id}>{label}</label>
-      <input name={name} id={id} type={type} ref={innerRef} />
+      <input id={id} {...register} {...props} />
     </div>
   );
 };
-
-export default TextField;

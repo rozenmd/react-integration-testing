@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^12.1.6",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-hook-form": "^6.8.4",
-    "react-scripts": "3.4.3"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.39.4",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,7 +33,6 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/dom": "^7.24.2",
-    "mutationobserver-shim": "^0.3.7"
+    "@testing-library/dom": "^8.19.0"
   }
 }
